@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  chefserver:
+    image: almalinux
+    command: ["sleep", "infinity"]
+    networks:
+      eugenio:
+        ipv4_address: 192.168.1.10
+
+  chefclient:
+    image: almalinux
+    command: ["sleep", "infinity"]
+    networks:
+      eugenio:
+        ipv4_address: 192.168.1.11
+
+  chefworks:
+    image: almalinux
+    command: ["sleep", "infinity"]
+    networks:
+      eugenio:
+        ipv4_address: 192.168.1.12
+
+networks:
+  eugenio:
+    ipam:
+      config:
+        - subnet: "192.168.1.0/24"
+
