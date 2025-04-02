@@ -1,0 +1,108 @@
+I, [2025-03-24T16:50:05.912285 #19178]  INFO -- eugenio-ubuntu-2404: -----> Creating <eugenio-ubuntu-2404>...
+I, [2025-03-24T16:50:08.573421 #19178]  INFO -- eugenio-ubuntu-2404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2025-03-24T16:50:08.770087 #19178]  INFO -- eugenio-ubuntu-2404: ==> default: Box 'bento/ubuntu-2404' could not be found. Attempting to find and install...
+I, [2025-03-24T16:50:08.770262 #19178]  INFO -- eugenio-ubuntu-2404:     default: Box Provider: virtualbox
+I, [2025-03-24T16:50:08.770372 #19178]  INFO -- eugenio-ubuntu-2404:     default: Box Version: >= 0
+I, [2025-03-24T16:50:10.639074 #19178]  INFO -- eugenio-ubuntu-2404: The box 'bento/ubuntu-2404' could not be found or
+I, [2025-03-24T16:50:10.639149 #19178]  INFO -- eugenio-ubuntu-2404: could not be accessed in the remote catalog. If this is a private
+I, [2025-03-24T16:50:10.639185 #19178]  INFO -- eugenio-ubuntu-2404: box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+I, [2025-03-24T16:50:10.639212 #19178]  INFO -- eugenio-ubuntu-2404: `vagrant login`. Also, please double-check the name. The expanded
+I, [2025-03-24T16:50:10.639245 #19178]  INFO -- eugenio-ubuntu-2404: URL and error message are shown below:
+I, [2025-03-24T16:50:10.639270 #19178]  INFO -- eugenio-ubuntu-2404: 
+I, [2025-03-24T16:50:10.639294 #19178]  INFO -- eugenio-ubuntu-2404: URL: ["https://vagrantcloud.com/bento/ubuntu-2404"]
+I, [2025-03-24T16:50:10.639323 #19178]  INFO -- eugenio-ubuntu-2404: Error: The requested URL returned error: 404
+E, [2025-03-24T16:50:10.665653 #19178] ERROR -- eugenio-ubuntu-2404: Create failed on instance <eugenio-ubuntu-2404>.
+E, [2025-03-24T16:50:10.665903 #19178] ERROR -- eugenio-ubuntu-2404: ------Exception-------
+E, [2025-03-24T16:50:10.665944 #19178] ERROR -- eugenio-ubuntu-2404: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2025-03-24T16:50:10.665969 #19178] ERROR -- eugenio-ubuntu-2404: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'bento/ubuntu-2404' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+STDERR: The box 'bento/ubuntu-2404' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://vagrantcloud.com/bento/ubuntu-2404"]
+Error: The requested URL returned error: 404
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2025-03-24T16:50:10.666003 #19178] ERROR -- eugenio-ubuntu-2404: ----------------------
+E, [2025-03-24T16:50:10.666025 #19178] ERROR -- eugenio-ubuntu-2404: ------Backtrace-------
+E, [2025-03-24T16:50:10.666046 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2025-03-24T16:50:10.666065 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2025-03-24T16:50:10.666089 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2025-03-24T16:50:10.666111 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2025-03-24T16:50:10.666138 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2025-03-24T16:50:10.666161 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2025-03-24T16:50:10.666208 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2025-03-24T16:50:10.666229 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2025-03-24T16:50:10.666250 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2025-03-24T16:50:10.666269 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2025-03-24T16:50:10.666290 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2025-03-24T16:50:10.666310 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2025-03-24T16:50:10.666329 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2025-03-24T16:50:10.666348 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2025-03-24T16:50:10.666366 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2025-03-24T16:50:10.666389 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2025-03-24T16:50:10.666412 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2025-03-24T16:50:10.666435 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2025-03-24T16:50:10.666458 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2025-03-24T16:50:10.666479 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2025-03-24T16:50:10.666503 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2025-03-24T16:50:10.666578 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2025-03-24T16:50:10.666659 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2025-03-24T16:50:10.666704 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2025-03-24T16:50:10.666742 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2025-03-24T16:50:10.666777 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2025-03-24T16:50:10.666816 #19178] ERROR -- eugenio-ubuntu-2404: ----End Backtrace-----
+E, [2025-03-24T16:50:10.666846 #19178] ERROR -- eugenio-ubuntu-2404: ---Nested Exception---
+E, [2025-03-24T16:50:10.666889 #19178] ERROR -- eugenio-ubuntu-2404: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2025-03-24T16:50:10.667297 #19178] ERROR -- eugenio-ubuntu-2404: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'bento/ubuntu-2404' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+STDERR: The box 'bento/ubuntu-2404' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://vagrantcloud.com/bento/ubuntu-2404"]
+Error: The requested URL returned error: 404
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2025-03-24T16:50:10.667560 #19178] ERROR -- eugenio-ubuntu-2404: ----------------------
+E, [2025-03-24T16:50:10.667588 #19178] ERROR -- eugenio-ubuntu-2404: ------Backtrace-------
+E, [2025-03-24T16:50:10.667612 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2025-03-24T16:50:10.667637 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2025-03-24T16:50:10.667802 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:473:in `run_command'
+E, [2025-03-24T16:50:10.667832 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:420:in `run'
+E, [2025-03-24T16:50:10.667857 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:524:in `run_vagrant_up'
+E, [2025-03-24T16:50:10.667883 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/kitchen-vagrant-2.0.1/lib/kitchen/driver/vagrant.rb:121:in `create'
+E, [2025-03-24T16:50:10.667905 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2025-03-24T16:50:10.667926 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2025-03-24T16:50:10.667955 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2025-03-24T16:50:10.667984 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2025-03-24T16:50:10.668007 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2025-03-24T16:50:10.668026 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2025-03-24T16:50:10.668051 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2025-03-24T16:50:10.668074 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2025-03-24T16:50:10.668095 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2025-03-24T16:50:10.668497 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2025-03-24T16:50:10.668572 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2025-03-24T16:50:10.668599 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2025-03-24T16:50:10.668622 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2025-03-24T16:50:10.668646 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2025-03-24T16:50:10.668668 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2025-03-24T16:50:10.668691 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2025-03-24T16:50:10.668752 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2025-03-24T16:50:10.668927 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2025-03-24T16:50:10.668992 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2025-03-24T16:50:10.669023 #19178] ERROR -- eugenio-ubuntu-2404: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.4.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2025-03-24T16:50:10.669049 #19178] ERROR -- eugenio-ubuntu-2404: ----End Backtrace-----

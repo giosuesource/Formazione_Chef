@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "bento/centos-9"
+  c.vm.hostname = "eugenio-centos-9.vagrantup.com"
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.synced_folder "/Users/giosuemanzo/.kitchen/cache", "/tmp/omnibus/cache", create: true
+  c.vm.provider :virtualbox do |p|
+    p.name = "kitchen-primo_esercizio-eugenio-centos-9-2e6268d0-0eb3-4e53-82ae-01e91c6815b2"
+    p.customize ["modifyvm", :id, "--audio", "none"]
+  end
+end

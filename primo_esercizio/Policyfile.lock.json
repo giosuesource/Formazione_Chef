@@ -1,0 +1,51 @@
+{
+  "revision_id": "1c281a558d0b50e51ad4ff8e89a4ae9ba99aecbacd85d9d5910248959b495d6e",
+  "name": "primo_esercizio",
+  "run_list": [
+    "recipe[primo_esercizio::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "primo_esercizio": {
+      "version": "0.1.0",
+      "identifier": "72374b865f42e464bdf0fd30fb1fd43915abaa8a",
+      "dotted_decimal_identifier": "32148944861479652.28356340408711967.233341641796234",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/giosuesource/sou-lab-cni",
+        "revision": "6347051a1708bde184cdf73e88c508853021c655",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/main"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "primo_esercizio",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "primo_esercizio (0.1.0)": [
+
+      ]
+    }
+  }
+}
