@@ -1,0 +1,354 @@
+I, [2025-04-14T15:46:15.588505 #16068]  INFO -- default-macchinapazza: -----> Creating <default-macchinapazza>...
+I, [2025-04-14T15:46:16.755580 #16068]  INFO -- default-macchinapazza: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2025-04-14T15:46:16.959822 #16068]  INFO -- default-macchinapazza: ==> default: Importing base box 'ubuntu/bionic64'...
+I, [2025-04-14T15:46:22.997742 #16068]  INFO -- default-macchinapazza: [KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2025-04-14T15:46:23.167187 #16068]  INFO -- default-macchinapazza: ==> default: Checking if box 'ubuntu/bionic64' version '20230607.0.5' is up to date...
+I, [2025-04-14T15:46:23.882011 #16068]  INFO -- default-macchinapazza: ==> default: Setting the name of the VM: kitchen-Chef-default-macchinapazza-3ac7de76-db1c-482f-8b31-6acfd425e8b6
+I, [2025-04-14T15:46:24.787111 #16068]  INFO -- default-macchinapazza: ==> default: Fixed port collision for 22 => 2222. Now on port 2202.
+I, [2025-04-14T15:46:24.857976 #16068]  INFO -- default-macchinapazza: ==> default: Clearing any previously set network interfaces...
+I, [2025-04-14T15:46:24.926830 #16068]  INFO -- default-macchinapazza: ==> default: Preparing network interfaces based on configuration...
+I, [2025-04-14T15:46:24.928553 #16068]  INFO -- default-macchinapazza:     default: Adapter 1: nat
+I, [2025-04-14T15:46:24.995988 #16068]  INFO -- default-macchinapazza: ==> default: Forwarding ports...
+I, [2025-04-14T15:46:25.095464 #16068]  INFO -- default-macchinapazza:     default: 22 (guest) => 2202 (host) (adapter 1)
+I, [2025-04-14T15:46:25.442478 #16068]  INFO -- default-macchinapazza: ==> default: Running 'pre-boot' VM customizations...
+I, [2025-04-14T15:46:25.661215 #16068]  INFO -- default-macchinapazza: ==> default: Booting VM...
+I, [2025-04-14T15:46:26.991166 #16068]  INFO -- default-macchinapazza: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2025-04-14T15:46:27.268287 #16068]  INFO -- default-macchinapazza:     default: SSH address: 127.0.0.1:2202
+I, [2025-04-14T15:46:27.268559 #16068]  INFO -- default-macchinapazza:     default: SSH username: vagrant
+I, [2025-04-14T15:46:27.270940 #16068]  INFO -- default-macchinapazza:     default: SSH auth method: private key
+I, [2025-04-14T15:46:49.265076 #16068]  INFO -- default-macchinapazza:     default: Warning: Connection reset. Retrying...
+I, [2025-04-14T15:46:57.217210 #16068]  INFO -- default-macchinapazza:     default: 
+I, [2025-04-14T15:46:57.217306 #16068]  INFO -- default-macchinapazza:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2025-04-14T15:46:57.217361 #16068]  INFO -- default-macchinapazza:     default: this with a newly generated keypair for better security.
+I, [2025-04-14T15:46:58.540184 #16068]  INFO -- default-macchinapazza:     default: 
+I, [2025-04-14T15:46:58.540899 #16068]  INFO -- default-macchinapazza:     default: Inserting generated public key within guest...
+I, [2025-04-14T15:46:58.666980 #16068]  INFO -- default-macchinapazza:     default: Removing insecure key from the guest if it's present...
+I, [2025-04-14T15:46:58.781998 #16068]  INFO -- default-macchinapazza:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2025-04-14T15:47:00.151781 #16068]  INFO -- default-macchinapazza: ==> default: Machine booted and ready!
+I, [2025-04-14T15:47:00.203626 #16068]  INFO -- default-macchinapazza: ==> default: Checking for guest additions in VM...
+I, [2025-04-14T15:47:00.267158 #16068]  INFO -- default-macchinapazza:     default: The guest additions on this VM do not match the installed version of
+I, [2025-04-14T15:47:00.267235 #16068]  INFO -- default-macchinapazza:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2025-04-14T15:47:00.267269 #16068]  INFO -- default-macchinapazza:     default: prevent things such as shared folders from working properly. If you see
+I, [2025-04-14T15:47:00.267296 #16068]  INFO -- default-macchinapazza:     default: shared folder errors, please make sure the guest additions within the
+I, [2025-04-14T15:47:00.267334 #16068]  INFO -- default-macchinapazza:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2025-04-14T15:47:00.267360 #16068]  INFO -- default-macchinapazza:     default: your host and reload your VM.
+I, [2025-04-14T15:47:00.267383 #16068]  INFO -- default-macchinapazza:     default: 
+I, [2025-04-14T15:47:00.267415 #16068]  INFO -- default-macchinapazza:     default: Guest Additions Version: 5.2.42
+I, [2025-04-14T15:47:00.267436 #16068]  INFO -- default-macchinapazza:     default: VirtualBox Version: 7.0
+I, [2025-04-14T15:47:00.269573 #16068]  INFO -- default-macchinapazza: ==> default: Setting hostname...
+I, [2025-04-14T15:47:01.291272 #16068]  INFO -- default-macchinapazza: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2025-04-14T15:47:04.666521 #16068]  INFO -- default-macchinapazza: [SSH] Established
+I, [2025-04-14T15:47:04.668945 #16068]  INFO -- default-macchinapazza: Vagrant instance <default-macchinapazza> created.
+I, [2025-04-14T15:47:04.673395 #16068]  INFO -- default-macchinapazza: Finished creating <default-macchinapazza> (0m49.08s).
+I, [2025-04-14T15:47:04.676196 #16068]  INFO -- default-macchinapazza: -----> Converging <default-macchinapazza>...
+I, [2025-04-14T15:47:04.913384 #16068]  INFO -- default-macchinapazza: Preparing files for transfer
+I, [2025-04-14T15:47:04.920168 #16068]  INFO -- default-macchinapazza: Installing cookbooks for Policyfile /Users/giosuemanzo/Desktop/Formazione_Chef/Chef/Policyfile.rb using `/usr/local/bin/chef-cli install`
+I, [2025-04-14T15:47:07.066565 #16068]  INFO -- default-macchinapazza: Installing cookbooks from lock
+I, [2025-04-14T15:47:07.147902 #16068]  INFO -- default-macchinapazza: Using      docker          11.9.2
+I, [2025-04-14T15:47:07.148092 #16068]  INFO -- default-macchinapazza: Installing primo_esercizio 0.1.0 
+I, [2025-04-14T15:47:07.178718 #16068]  INFO -- default-macchinapazza: Updating policy lock using `/usr/local/bin/chef-cli update`
+I, [2025-04-14T15:47:08.625642 #16068]  INFO -- default-macchinapazza: Building policy primo_esercizio
+I, [2025-04-14T15:47:08.625819 #16068]  INFO -- default-macchinapazza: Expanded run list: recipe[primo_esercizio::default]
+I, [2025-04-14T15:47:08.625872 #16068]  INFO -- default-macchinapazza: Caching Cookbooks...
+I, [2025-04-14T15:47:08.626043 #16068]  INFO -- default-macchinapazza: Installing primo_esercizio >= 0.0.0 from path
+I, [2025-04-14T15:47:11.177603 #16068]  INFO -- default-macchinapazza: Using      docker          11.9.2
+I, [2025-04-14T15:47:11.809216 #16068]  INFO -- default-macchinapazza: 
+I, [2025-04-14T15:47:11.809291 #16068]  INFO -- default-macchinapazza: Lockfile written to /Users/giosuemanzo/Desktop/Formazione_Chef/Chef/Policyfile.lock.json
+I, [2025-04-14T15:47:11.809325 #16068]  INFO -- default-macchinapazza: Policy revision id: ecc9c3d0bfb7f7e92fe7e7c200595feb207ab89ce4229f6f004ac0c925abb814
+I, [2025-04-14T15:47:11.878901 #16068]  INFO -- default-macchinapazza: Preparing dna.json
+I, [2025-04-14T15:47:11.884225 #16068]  INFO -- default-macchinapazza: Exporting cookbook dependencies from Policyfile /var/folders/vl/gr549w0d5xb4c1r_gh_0wm2c0000gn/T/default-macchinapazza-sandbox-20250414-16068-hfpu4u using `/usr/local/bin/chef-cli export`...
+I, [2025-04-14T15:47:13.738331 #16068]  INFO -- default-macchinapazza: Exported policy 'primo_esercizio' to /var/folders/vl/gr549w0d5xb4c1r_gh_0wm2c0000gn/T/default-macchinapazza-sandbox-20250414-16068-hfpu4u
+I, [2025-04-14T15:47:13.738474 #16068]  INFO -- default-macchinapazza: 
+I, [2025-04-14T15:47:13.738503 #16068]  INFO -- default-macchinapazza: To converge this system with the exported policy, run:
+I, [2025-04-14T15:47:13.738528 #16068]  INFO -- default-macchinapazza:   cd /var/folders/vl/gr549w0d5xb4c1r_gh_0wm2c0000gn/T/default-macchinapazza-sandbox-20250414-16068-hfpu4u
+I, [2025-04-14T15:47:13.738551 #16068]  INFO -- default-macchinapazza:   chef-client -z
+I, [2025-04-14T15:47:13.766091 #16068]  INFO -- default-macchinapazza: Removing non-cookbook files before transfer
+I, [2025-04-14T15:47:13.768339 #16068]  INFO -- default-macchinapazza: Preparing validation.pem
+I, [2025-04-14T15:47:13.771325 #16068]  INFO -- default-macchinapazza: Preparing client.rb
+I, [2025-04-14T15:47:13.832524 #16068]  INFO -- default-macchinapazza: -----> Installing Chef install only if missing package
+I, [2025-04-14T15:47:13.834099 #16068]  INFO -- default-macchinapazza: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2025-04-14T15:47:13.834157 #16068]  INFO -- default-macchinapazza: Trying wget...
+I, [2025-04-14T15:47:13.964499 #16068]  INFO -- default-macchinapazza: Download complete.
+I, [2025-04-14T15:47:13.989971 #16068]  INFO -- default-macchinapazza: ubuntu 18.04 x86_64
+I, [2025-04-14T15:47:13.992361 #16068]  INFO -- default-macchinapazza: Getting information for chef stable  for ubuntu...
+I, [2025-04-14T15:47:13.992607 #16068]  INFO -- default-macchinapazza: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=18.04&m=x86_64
+I, [2025-04-14T15:47:13.992669 #16068]  INFO -- default-macchinapazza:   to file /tmp/install.sh.2316/metadata.txt
+I, [2025-04-14T15:47:13.996111 #16068]  INFO -- default-macchinapazza: trying wget...
+I, [2025-04-14T15:47:14.083210 #16068]  INFO -- default-macchinapazza: sha1	64fc3e8bc0b8fbc4814f0e775fc8727255ecf85a
+I, [2025-04-14T15:47:14.083316 #16068]  INFO -- default-macchinapazza: sha256	ee5471af8fdcf759b468b67f01314931d996ef6006ee3382747f4a3d1b93b20b
+I, [2025-04-14T15:47:14.083427 #16068]  INFO -- default-macchinapazza: url	https://packages.chef.io/files/stable/chef/18.7.3/ubuntu/18.04/chef_18.7.3-1_amd64.deb
+I, [2025-04-14T15:47:14.085076 #16068]  INFO -- default-macchinapazza: version	18.7.3
+I, [2025-04-14T15:47:14.089367 #16068]  INFO -- default-macchinapazza: downloaded metadata file looks valid...
+I, [2025-04-14T15:47:14.103397 #16068]  INFO -- default-macchinapazza: downloading https://packages.chef.io/files/stable/chef/18.7.3/ubuntu/18.04/chef_18.7.3-1_amd64.deb
+I, [2025-04-14T15:47:14.103465 #16068]  INFO -- default-macchinapazza:   to file /tmp/install.sh.2316/chef_18.7.3-1_amd64.deb
+I, [2025-04-14T15:47:14.104786 #16068]  INFO -- default-macchinapazza: trying wget...
+I, [2025-04-14T15:47:17.851451 #16068]  INFO -- default-macchinapazza: Comparing checksum with sha256sum...
+I, [2025-04-14T15:47:18.050853 #16068]  INFO -- default-macchinapazza: 
+I, [2025-04-14T15:47:18.050924 #16068]  INFO -- default-macchinapazza: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2025-04-14T15:47:18.050948 #16068]  INFO -- default-macchinapazza: 
+I, [2025-04-14T15:47:18.050967 #16068]  INFO -- default-macchinapazza: You are installing a package without a version pin.  If you are installing
+I, [2025-04-14T15:47:18.050986 #16068]  INFO -- default-macchinapazza: on production servers via an automated process this is DANGEROUS and you will
+I, [2025-04-14T15:47:18.051004 #16068]  INFO -- default-macchinapazza: be upgraded without warning on new releases, even to new major releases.
+I, [2025-04-14T15:47:18.051021 #16068]  INFO -- default-macchinapazza: Letting the version float is only appropriate in test, development or
+I, [2025-04-14T15:47:18.051037 #16068]  INFO -- default-macchinapazza: CI/CD environments.
+I, [2025-04-14T15:47:18.051053 #16068]  INFO -- default-macchinapazza: 
+I, [2025-04-14T15:47:18.051069 #16068]  INFO -- default-macchinapazza: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2025-04-14T15:47:18.051086 #16068]  INFO -- default-macchinapazza: 
+I, [2025-04-14T15:47:18.051102 #16068]  INFO -- default-macchinapazza: Installing chef 
+I, [2025-04-14T15:47:18.051118 #16068]  INFO -- default-macchinapazza: installing with dpkg...
+I, [2025-04-14T15:47:18.138343 #16068]  INFO -- default-macchinapazza: Selecting previously unselected package chef.
+I, [2025-04-14T15:47:18.415745 #16068]  INFO -- default-macchinapazza: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60336 files and directories currently installed.)
+I, [2025-04-14T15:47:18.431733 #16068]  INFO -- default-macchinapazza: Preparing to unpack .../chef_18.7.3-1_amd64.deb ...
+I, [2025-04-14T15:47:18.452096 #16068]  INFO -- default-macchinapazza: Unpacking chef (18.7.3-1) ...
+I, [2025-04-14T15:47:24.905937 #16068]  INFO -- default-macchinapazza: Setting up chef (18.7.3-1) ...
+I, [2025-04-14T15:47:24.966499 #16068]  INFO -- default-macchinapazza: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2025-04-14T15:47:25.013113 #16068]  INFO -- default-macchinapazza: Transferring files to <default-macchinapazza>
+I, [2025-04-14T15:47:26.437808 #16068]  INFO -- default-macchinapazza: +---------------------------------------------+
+I, [2025-04-14T15:47:26.437906 #16068]  INFO -- default-macchinapazza: [32m✔[0m 2 product licenses accepted.
+I, [2025-04-14T15:47:26.437937 #16068]  INFO -- default-macchinapazza: +---------------------------------------------+
+I, [2025-04-14T15:47:26.714132 #16068]  INFO -- default-macchinapazza: Chef Infra Client, version 18.7.3
+I, [2025-04-14T15:47:26.714642 #16068]  INFO -- default-macchinapazza: Patents: https://www.chef.io/patents
+I, [2025-04-14T15:47:26.716428 #16068]  INFO -- default-macchinapazza: Infra Phase starting
+I, [2025-04-14T15:47:27.871447 #16068]  INFO -- default-macchinapazza: Creating a new client identity for default-macchinapazza using the validator key.
+I, [2025-04-14T15:47:27.998386 #16068]  INFO -- default-macchinapazza: Using Policyfile 'primo_esercizio' at revision 'ecc9c3d0bfb7f7e92fe7e7c200595feb207ab89ce4229f6f004ac0c925abb814'
+I, [2025-04-14T15:47:28.013303 #16068]  INFO -- default-macchinapazza: Resolving cookbooks for run list: ["primo_esercizio::default@0.1.0 (abaccce)"]
+I, [2025-04-14T15:47:28.087056 #16068]  INFO -- default-macchinapazza: Synchronizing cookbooks:
+I, [2025-04-14T15:47:28.216775 #16068]  INFO -- default-macchinapazza:   - docker (11.9.2)
+I, [2025-04-14T15:47:28.218878 #16068]  INFO -- default-macchinapazza:   - primo_esercizio (0.1.0)
+I, [2025-04-14T15:47:28.222065 #16068]  INFO -- default-macchinapazza: Installing cookbook gem dependencies:
+I, [2025-04-14T15:47:34.027925 #16068]  INFO -- default-macchinapazza: Compiling cookbooks...
+I, [2025-04-14T15:47:34.466858 #16068]  INFO -- default-macchinapazza: Loading Chef InSpec profile files:
+I, [2025-04-14T15:47:34.468492 #16068]  INFO -- default-macchinapazza: Loading Chef InSpec input files:
+I, [2025-04-14T15:47:34.472363 #16068]  INFO -- default-macchinapazza: Loading Chef InSpec waiver files:
+I, [2025-04-14T15:47:34.711182 #16068]  INFO -- default-macchinapazza: Converging 4 resources
+I, [2025-04-14T15:47:34.713312 #16068]  INFO -- default-macchinapazza: Recipe: primo_esercizio::default
+I, [2025-04-14T15:47:46.858772 #16068]  INFO -- default-macchinapazza:   * execute[apt-get update] action run
+I, [2025-04-14T15:47:46.861427 #16068]  INFO -- default-macchinapazza:     - execute apt-get update
+I, [2025-04-14T15:47:46.877204 #16068]  INFO -- default-macchinapazza:   * docker_service[default] action create
+I, [2025-04-14T15:47:46.885909 #16068]  INFO -- default-macchinapazza:     * docker_installation_package[default] action create
+I, [2025-04-14T15:47:46.890262 #16068]  INFO -- default-macchinapazza:       * apt_update[apt-transport-https] action periodic (up to date)
+I, [2025-04-14T15:47:50.281055 #16068]  INFO -- default-macchinapazza:       * apt_package[apt-transport-https] action install
+I, [2025-04-14T15:47:50.281196 #16068]  INFO -- default-macchinapazza:  - install version 1.6.17 of package apt-transport-https
+I, [2025-04-14T15:47:50.290306 #16068]  INFO -- default-macchinapazza:       * apt_repository[docker] action add
+I, [2025-04-14T15:47:50.291874 #16068]  INFO -- default-macchinapazza:  * execute[apt-cache gencaches] action nothing (skipped due to action :nothing)
+I, [2025-04-14T15:47:50.296247 #16068]  INFO -- default-macchinapazza:  * apt_update[docker] action nothing (skipped due to action :nothing)
+I, [2025-04-14T15:47:50.299122 #16068]  INFO -- default-macchinapazza:  
+I, [2025-04-14T15:47:50.299215 #16068]  INFO -- default-macchinapazza:  ================================================================================
+I, [2025-04-14T15:47:50.299289 #16068]  INFO -- default-macchinapazza:  Error executing action `add` on resource 'apt_repository[docker]'
+I, [2025-04-14T15:47:50.300875 #16068]  INFO -- default-macchinapazza:  ================================================================================
+I, [2025-04-14T15:47:50.300990 #16068]  INFO -- default-macchinapazza:  
+I, [2025-04-14T15:47:50.301050 #16068]  INFO -- default-macchinapazza:  NameError
+I, [2025-04-14T15:47:50.301107 #16068]  INFO -- default-macchinapazza:  ---------
+I, [2025-04-14T15:47:50.301163 #16068]  INFO -- default-macchinapazza:  uninitialized constant Chef::Resource::AptRepository::TargetIO
+I, [2025-04-14T15:47:50.301223 #16068]  INFO -- default-macchinapazza:  
+I, [2025-04-14T15:47:50.302757 #16068]  INFO -- default-macchinapazza:  Cookbook Trace: (most recent call first)
+I, [2025-04-14T15:47:50.302835 #16068]  INFO -- default-macchinapazza:  ----------------------------------------
+I, [2025-04-14T15:47:50.302880 #16068]  INFO -- default-macchinapazza:  /tmp/kitchen/cache/cookbooks/docker/resources/installation_package.rb:178:in `block in class_from_file'
+I, [2025-04-14T15:47:50.304541 #16068]  INFO -- default-macchinapazza:  /tmp/kitchen/cache/cookbooks/docker/resources/service.rb:57:in `installation'
+I, [2025-04-14T15:47:50.305933 #16068]  INFO -- default-macchinapazza:  /tmp/kitchen/cache/cookbooks/docker/resources/service.rb:96:in `block in class_from_file'
+I, [2025-04-14T15:47:50.307432 #16068]  INFO -- default-macchinapazza:  
+I, [2025-04-14T15:47:50.307658 #16068]  INFO -- default-macchinapazza:  Resource Declaration:
+I, [2025-04-14T15:47:50.308220 #16068]  INFO -- default-macchinapazza:  ---------------------
+I, [2025-04-14T15:47:50.308282 #16068]  INFO -- default-macchinapazza:  # In /tmp/kitchen/cache/cookbooks/docker/resources/installation_package.rb
+I, [2025-04-14T15:47:50.308342 #16068]  INFO -- default-macchinapazza:  
+I, [2025-04-14T15:47:50.308399 #16068]  INFO -- default-macchinapazza:  178:       apt_repository 'docker' do
+I, [2025-04-14T15:47:50.308723 #16068]  INFO -- default-macchinapazza:  179:         components Array(new_resource.repo_channel)
+I, [2025-04-14T15:47:50.308770 #16068]  INFO -- default-macchinapazza:  180:         uri "https://#{new_resource.site_url}/linux/#{node['platform']}"
+I, [2025-04-14T15:47:50.308811 #16068]  INFO -- default-macchinapazza:  181:         arch deb_arch
+I, [2025-04-14T15:47:50.308848 #16068]  INFO -- default-macchinapazza:  182:         key "https://#{new_resource.site_url}/linux/#{node['platform']}/gpg"
+I, [2025-04-14T15:47:50.308887 #16068]  INFO -- default-macchinapazza:  183:         action :add
+I, [2025-04-14T15:47:50.308924 #16068]  INFO -- default-macchinapazza:  184:       end
+I, [2025-04-14T15:47:50.310053 #16068]  INFO -- default-macchinapazza:  185: 
+I, [2025-04-14T15:47:50.312781 #16068]  INFO -- default-macchinapazza:  
+I, [2025-04-14T15:47:50.312941 #16068]  INFO -- default-macchinapazza:  Compiled Resource:
+I, [2025-04-14T15:47:50.313026 #16068]  INFO -- default-macchinapazza:  ------------------
+I, [2025-04-14T15:47:50.313079 #16068]  INFO -- default-macchinapazza:  # Declared in /tmp/kitchen/cache/cookbooks/docker/resources/installation_package.rb:178:in `block in class_from_file'
+I, [2025-04-14T15:47:50.313120 #16068]  INFO -- default-macchinapazza:  
+I, [2025-04-14T15:47:50.313160 #16068]  INFO -- default-macchinapazza:  apt_repository("docker") do
+I, [2025-04-14T15:47:50.313199 #16068]  INFO -- default-macchinapazza:    action [:add]
+I, [2025-04-14T15:47:50.313264 #16068]  INFO -- default-macchinapazza:    default_guard_interpreter :default
+I, [2025-04-14T15:47:50.313305 #16068]  INFO -- default-macchinapazza:    declared_type :apt_repository
+I, [2025-04-14T15:47:50.313344 #16068]  INFO -- default-macchinapazza:    cookbook_name "primo_esercizio"
+I, [2025-04-14T15:47:50.313394 #16068]  INFO -- default-macchinapazza:    recipe_name "default"
+I, [2025-04-14T15:47:50.313431 #16068]  INFO -- default-macchinapazza:    components ["stable"]
+I, [2025-04-14T15:47:50.313506 #16068]  INFO -- default-macchinapazza:    uri "https://download.docker.com/linux/ubuntu"
+I, [2025-04-14T15:47:50.313707 #16068]  INFO -- default-macchinapazza:    arch "amd64"
+I, [2025-04-14T15:47:50.313745 #16068]  INFO -- default-macchinapazza:    key ["https://download.docker.com/linux/ubuntu/gpg"]
+I, [2025-04-14T15:47:50.313770 #16068]  INFO -- default-macchinapazza:  end
+I, [2025-04-14T15:47:50.313791 #16068]  INFO -- default-macchinapazza:  
+I, [2025-04-14T15:47:50.313834 #16068]  INFO -- default-macchinapazza:  System Info:
+I, [2025-04-14T15:47:50.313865 #16068]  INFO -- default-macchinapazza:  ------------
+I, [2025-04-14T15:47:50.313886 #16068]  INFO -- default-macchinapazza:  chef_version=18.7.3
+I, [2025-04-14T15:47:50.313906 #16068]  INFO -- default-macchinapazza:  platform=ubuntu
+I, [2025-04-14T15:47:50.313926 #16068]  INFO -- default-macchinapazza:  platform_version=18.04
+I, [2025-04-14T15:47:50.313950 #16068]  INFO -- default-macchinapazza:  ruby=ruby 3.1.6p260 (2024-05-29 revision a777087be6) [x86_64-linux]
+I, [2025-04-14T15:47:50.313973 #16068]  INFO -- default-macchinapazza:  program_name=/opt/chef/bin/chef-client
+I, [2025-04-14T15:47:50.314028 #16068]  INFO -- default-macchinapazza:  executable=/opt/chef/bin/chef-client
+I, [2025-04-14T15:47:50.314097 #16068]  INFO -- default-macchinapazza:  
+I, [2025-04-14T15:47:50.317939 #16068]  INFO -- default-macchinapazza:       
+I, [2025-04-14T15:47:50.318012 #16068]  INFO -- default-macchinapazza:       ================================================================================
+I, [2025-04-14T15:47:50.318041 #16068]  INFO -- default-macchinapazza:       Error executing action `create` on resource 'docker_installation_package[default]'
+I, [2025-04-14T15:47:50.318064 #16068]  INFO -- default-macchinapazza:       ================================================================================
+I, [2025-04-14T15:47:50.318085 #16068]  INFO -- default-macchinapazza:       
+I, [2025-04-14T15:47:50.318102 #16068]  INFO -- default-macchinapazza:       NameError
+I, [2025-04-14T15:47:50.318120 #16068]  INFO -- default-macchinapazza:       ---------
+I, [2025-04-14T15:47:50.318140 #16068]  INFO -- default-macchinapazza:       apt_repository[docker] (primo_esercizio::default line 178) had an error: NameError: uninitialized constant Chef::Resource::AptRepository::TargetIO
+I, [2025-04-14T15:47:50.318159 #16068]  INFO -- default-macchinapazza:       
+I, [2025-04-14T15:47:50.318178 #16068]  INFO -- default-macchinapazza:       Cookbook Trace: (most recent call first)
+I, [2025-04-14T15:47:50.318195 #16068]  INFO -- default-macchinapazza:       ----------------------------------------
+I, [2025-04-14T15:47:50.318253 #16068]  INFO -- default-macchinapazza:       /tmp/kitchen/cache/cookbooks/docker/resources/installation_package.rb:178:in `block in class_from_file'
+I, [2025-04-14T15:47:50.318301 #16068]  INFO -- default-macchinapazza:       /tmp/kitchen/cache/cookbooks/docker/resources/service.rb:57:in `installation'
+I, [2025-04-14T15:47:50.322445 #16068]  INFO -- default-macchinapazza:       /tmp/kitchen/cache/cookbooks/docker/resources/service.rb:96:in `block in class_from_file'
+I, [2025-04-14T15:47:50.322565 #16068]  INFO -- default-macchinapazza:       
+I, [2025-04-14T15:47:50.322594 #16068]  INFO -- default-macchinapazza:       Resource Declaration:
+I, [2025-04-14T15:47:50.322616 #16068]  INFO -- default-macchinapazza:       ---------------------
+I, [2025-04-14T15:47:50.322636 #16068]  INFO -- default-macchinapazza:       # In /tmp/kitchen/cache/cookbooks/docker/resources/service.rb
+I, [2025-04-14T15:47:50.322676 #16068]  INFO -- default-macchinapazza:       
+I, [2025-04-14T15:47:50.322707 #16068]  INFO -- default-macchinapazza: 57:       install = docker_installation_package(new_resource.name, &b)
+I, [2025-04-14T15:47:50.322737 #16068]  INFO -- default-macchinapazza: 58:     when 'tarball'
+I, [2025-04-14T15:47:50.322761 #16068]  INFO -- default-macchinapazza: 59:       install = docker_installation_tarball(new_resource.name, &b)
+I, [2025-04-14T15:47:50.322787 #16068]  INFO -- default-macchinapazza: 60:     when 'none'
+I, [2025-04-14T15:47:50.322811 #16068]  INFO -- default-macchinapazza: 61:       Chef::Log.info('Skipping Docker installation. Assuming it was handled previously.')
+I, [2025-04-14T15:47:50.322836 #16068]  INFO -- default-macchinapazza: 62:       return
+I, [2025-04-14T15:47:50.322862 #16068]  INFO -- default-macchinapazza: 63:     end
+I, [2025-04-14T15:47:50.322883 #16068]  INFO -- default-macchinapazza: 64:     install
+I, [2025-04-14T15:47:50.322911 #16068]  INFO -- default-macchinapazza: 65:   end
+I, [2025-04-14T15:47:50.322943 #16068]  INFO -- default-macchinapazza: 66: 
+I, [2025-04-14T15:47:50.322974 #16068]  INFO -- default-macchinapazza:       
+I, [2025-04-14T15:47:50.323017 #16068]  INFO -- default-macchinapazza:       Compiled Resource:
+I, [2025-04-14T15:47:50.323043 #16068]  INFO -- default-macchinapazza:       ------------------
+I, [2025-04-14T15:47:50.325459 #16068]  INFO -- default-macchinapazza:       # Declared in /tmp/kitchen/cache/cookbooks/docker/resources/service.rb:57:in `installation'
+I, [2025-04-14T15:47:50.325534 #16068]  INFO -- default-macchinapazza:       
+I, [2025-04-14T15:47:50.325854 #16068]  INFO -- default-macchinapazza:       docker_installation_package("default") do
+I, [2025-04-14T15:47:50.326067 #16068]  INFO -- default-macchinapazza:  action [:create]
+I, [2025-04-14T15:47:50.326115 #16068]  INFO -- default-macchinapazza:  updated true
+I, [2025-04-14T15:47:50.326166 #16068]  INFO -- default-macchinapazza:  updated_by_last_action true
+I, [2025-04-14T15:47:50.326206 #16068]  INFO -- default-macchinapazza:  default_guard_interpreter :default
+I, [2025-04-14T15:47:50.326242 #16068]  INFO -- default-macchinapazza:  declared_type :docker_installation_package
+I, [2025-04-14T15:47:50.326277 #16068]  INFO -- default-macchinapazza:  cookbook_name "primo_esercizio"
+I, [2025-04-14T15:47:50.326313 #16068]  INFO -- default-macchinapazza:  recipe_name "default"
+I, [2025-04-14T15:47:50.326358 #16068]  INFO -- default-macchinapazza:  repo_channel "stable"
+I, [2025-04-14T15:47:50.326395 #16068]  INFO -- default-macchinapazza:  site_url "download.docker.com"
+I, [2025-04-14T15:47:50.326424 #16068]  INFO -- default-macchinapazza:       end
+I, [2025-04-14T15:47:50.326453 #16068]  INFO -- default-macchinapazza:       
+I, [2025-04-14T15:47:50.334204 #16068]  INFO -- default-macchinapazza:       System Info:
+I, [2025-04-14T15:47:50.335218 #16068]  INFO -- default-macchinapazza:       ------------
+I, [2025-04-14T15:47:50.336209 #16068]  INFO -- default-macchinapazza:       chef_version=18.7.3
+I, [2025-04-14T15:47:50.337635 #16068]  INFO -- default-macchinapazza:       platform=ubuntu
+I, [2025-04-14T15:47:50.337726 #16068]  INFO -- default-macchinapazza:       platform_version=18.04
+I, [2025-04-14T15:47:50.337768 #16068]  INFO -- default-macchinapazza:       ruby=ruby 3.1.6p260 (2024-05-29 revision a777087be6) [x86_64-linux]
+I, [2025-04-14T15:47:50.337799 #16068]  INFO -- default-macchinapazza:       program_name=/opt/chef/bin/chef-client
+I, [2025-04-14T15:47:50.340235 #16068]  INFO -- default-macchinapazza:       executable=/opt/chef/bin/chef-client
+I, [2025-04-14T15:47:50.341551 #16068]  INFO -- default-macchinapazza:       
+I, [2025-04-14T15:47:50.342111 #16068]  INFO -- default-macchinapazza:     
+I, [2025-04-14T15:47:50.342980 #16068]  INFO -- default-macchinapazza:     ================================================================================
+I, [2025-04-14T15:47:50.343541 #16068]  INFO -- default-macchinapazza:     Error executing action `create` on resource 'docker_service[default]'
+I, [2025-04-14T15:47:50.343633 #16068]  INFO -- default-macchinapazza:     ================================================================================
+I, [2025-04-14T15:47:50.343673 #16068]  INFO -- default-macchinapazza:     
+I, [2025-04-14T15:47:50.343931 #16068]  INFO -- default-macchinapazza:     NameError
+I, [2025-04-14T15:47:50.344746 #16068]  INFO -- default-macchinapazza:     ---------
+I, [2025-04-14T15:47:50.348046 #16068]  INFO -- default-macchinapazza:     docker_installation_package[default] (primo_esercizio::default line 57) had an error: NameError: apt_repository[docker] (primo_esercizio::default line 178) had an error: NameError: uninitialized constant Chef::Resource::AptRepository::TargetIO
+I, [2025-04-14T15:47:50.348105 #16068]  INFO -- default-macchinapazza:     
+I, [2025-04-14T15:47:50.348128 #16068]  INFO -- default-macchinapazza:     Cookbook Trace: (most recent call first)
+I, [2025-04-14T15:47:50.348151 #16068]  INFO -- default-macchinapazza:     ----------------------------------------
+I, [2025-04-14T15:47:50.348170 #16068]  INFO -- default-macchinapazza:     /tmp/kitchen/cache/cookbooks/docker/resources/installation_package.rb:178:in `block in class_from_file'
+I, [2025-04-14T15:47:50.348187 #16068]  INFO -- default-macchinapazza:     /tmp/kitchen/cache/cookbooks/docker/resources/service.rb:57:in `installation'
+I, [2025-04-14T15:47:50.348204 #16068]  INFO -- default-macchinapazza:     /tmp/kitchen/cache/cookbooks/docker/resources/service.rb:96:in `block in class_from_file'
+I, [2025-04-14T15:47:50.348227 #16068]  INFO -- default-macchinapazza:     
+I, [2025-04-14T15:47:50.348245 #16068]  INFO -- default-macchinapazza:     Resource Declaration:
+I, [2025-04-14T15:47:50.348261 #16068]  INFO -- default-macchinapazza:     ---------------------
+I, [2025-04-14T15:47:50.348278 #16068]  INFO -- default-macchinapazza:     # In /tmp/kitchen/cache/cookbooks/primo_esercizio/recipes/default.rb
+I, [2025-04-14T15:47:50.348296 #16068]  INFO -- default-macchinapazza:     
+I, [2025-04-14T15:47:50.348313 #16068]  INFO -- default-macchinapazza:       8: docker_service 'default' do
+I, [2025-04-14T15:47:50.348329 #16068]  INFO -- default-macchinapazza:       9:     action [:create, :start]
+I, [2025-04-14T15:47:50.348345 #16068]  INFO -- default-macchinapazza:      10: end
+I, [2025-04-14T15:47:50.348361 #16068]  INFO -- default-macchinapazza:      11: 
+I, [2025-04-14T15:47:50.348376 #16068]  INFO -- default-macchinapazza:     
+I, [2025-04-14T15:47:50.348391 #16068]  INFO -- default-macchinapazza:     Compiled Resource:
+I, [2025-04-14T15:47:50.348407 #16068]  INFO -- default-macchinapazza:     ------------------
+I, [2025-04-14T15:47:50.348423 #16068]  INFO -- default-macchinapazza:     # Declared in /tmp/kitchen/cache/cookbooks/primo_esercizio/recipes/default.rb:8:in `from_file'
+I, [2025-04-14T15:47:50.348439 #16068]  INFO -- default-macchinapazza:     
+I, [2025-04-14T15:47:50.348455 #16068]  INFO -- default-macchinapazza:     docker_service("default") do
+I, [2025-04-14T15:47:50.348471 #16068]  INFO -- default-macchinapazza:       action [:create, :start]
+I, [2025-04-14T15:47:50.348486 #16068]  INFO -- default-macchinapazza:       updated true
+I, [2025-04-14T15:47:50.348502 #16068]  INFO -- default-macchinapazza:       updated_by_last_action true
+I, [2025-04-14T15:47:50.348517 #16068]  INFO -- default-macchinapazza:       default_guard_interpreter :default
+I, [2025-04-14T15:47:50.348533 #16068]  INFO -- default-macchinapazza:       declared_type :docker_service
+I, [2025-04-14T15:47:50.348549 #16068]  INFO -- default-macchinapazza:       cookbook_name "primo_esercizio"
+I, [2025-04-14T15:47:50.348564 #16068]  INFO -- default-macchinapazza:       recipe_name "default"
+I, [2025-04-14T15:47:50.348580 #16068]  INFO -- default-macchinapazza:       install_method "package"
+I, [2025-04-14T15:47:50.348597 #16068]  INFO -- default-macchinapazza:     end
+I, [2025-04-14T15:47:50.348613 #16068]  INFO -- default-macchinapazza:     
+I, [2025-04-14T15:47:50.348670 #16068]  INFO -- default-macchinapazza:     System Info:
+I, [2025-04-14T15:47:50.348713 #16068]  INFO -- default-macchinapazza:     ------------
+I, [2025-04-14T15:47:50.348752 #16068]  INFO -- default-macchinapazza:     chef_version=18.7.3
+I, [2025-04-14T15:47:50.348779 #16068]  INFO -- default-macchinapazza:     platform=ubuntu
+I, [2025-04-14T15:47:50.348807 #16068]  INFO -- default-macchinapazza:     platform_version=18.04
+I, [2025-04-14T15:47:50.348841 #16068]  INFO -- default-macchinapazza:     ruby=ruby 3.1.6p260 (2024-05-29 revision a777087be6) [x86_64-linux]
+I, [2025-04-14T15:47:50.348887 #16068]  INFO -- default-macchinapazza:     program_name=/opt/chef/bin/chef-client
+I, [2025-04-14T15:47:50.348923 #16068]  INFO -- default-macchinapazza:     executable=/opt/chef/bin/chef-client
+I, [2025-04-14T15:47:50.348944 #16068]  INFO -- default-macchinapazza:     
+I, [2025-04-14T15:47:50.348961 #16068]  INFO -- default-macchinapazza: 
+I, [2025-04-14T15:47:50.348978 #16068]  INFO -- default-macchinapazza: Running handlers:
+I, [2025-04-14T15:47:50.348994 #16068]  INFO -- default-macchinapazza: [2025-04-14T13:47:48+00:00] ERROR: Running exception handlers
+I, [2025-04-14T15:47:50.349011 #16068]  INFO -- default-macchinapazza: Running handlers complete
+I, [2025-04-14T15:47:50.349028 #16068]  INFO -- default-macchinapazza: [2025-04-14T13:47:48+00:00] ERROR: Exception handlers complete
+I, [2025-04-14T15:47:50.349045 #16068]  INFO -- default-macchinapazza: Infra Phase failed. 2 resources updated in 23 seconds
+I, [2025-04-14T15:47:50.356887 #16068]  INFO -- default-macchinapazza: [2025-04-14T13:47:48+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2025-04-14T15:47:50.357855 #16068]  INFO -- default-macchinapazza: [2025-04-14T13:47:48+00:00] FATAL: ---------------------------------------------------------------------------------------
+I, [2025-04-14T15:47:50.357970 #16068]  INFO -- default-macchinapazza: [2025-04-14T13:47:48+00:00] FATAL: PLEASE PROVIDE THE CONTENTS OF THE stacktrace.out FILE (above) IF YOU FILE A BUG REPORT
+I, [2025-04-14T15:47:50.358134 #16068]  INFO -- default-macchinapazza: [2025-04-14T13:47:48+00:00] FATAL: ---------------------------------------------------------------------------------------
+I, [2025-04-14T15:47:50.358598 #16068]  INFO -- default-macchinapazza: [2025-04-14T13:47:48+00:00] FATAL: NameError: docker_service[default] (primo_esercizio::default line 8) had an error: NameError: docker_installation_package[default] (primo_esercizio::default line 57) had an error: NameError: apt_repository[docker] (primo_esercizio::default line 178) had an error: NameError: uninitialized constant Chef::Resource::AptRepository::TargetIO
+E, [2025-04-14T15:47:50.419106 #16068] ERROR -- default-macchinapazza: Converge failed on instance <default-macchinapazza>.
+E, [2025-04-14T15:47:50.419270 #16068] ERROR -- default-macchinapazza: ------Exception-------
+E, [2025-04-14T15:47:50.419322 #16068] ERROR -- default-macchinapazza: Class: Kitchen::ActionFailed
+E, [2025-04-14T15:47:50.419356 #16068] ERROR -- default-macchinapazza: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2025-04-14T15:47:50.419371 #16068] ERROR -- default-macchinapazza: ----------------------
+E, [2025-04-14T15:47:50.419384 #16068] ERROR -- default-macchinapazza: ------Backtrace-------
+E, [2025-04-14T15:47:50.419937 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2025-04-14T15:47:50.419994 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2025-04-14T15:47:50.420063 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2025-04-14T15:47:50.420161 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2025-04-14T15:47:50.420214 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2025-04-14T15:47:50.420263 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2025-04-14T15:47:50.420316 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2025-04-14T15:47:50.420368 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2025-04-14T15:47:50.420420 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2025-04-14T15:47:50.420472 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2025-04-14T15:47:50.420487 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2025-04-14T15:47:50.420500 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2025-04-14T15:47:50.420512 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2025-04-14T15:47:50.420545 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2025-04-14T15:47:50.420563 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2025-04-14T15:47:50.420588 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2025-04-14T15:47:50.420609 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2025-04-14T15:47:50.420632 #16068] ERROR -- default-macchinapazza: ----End Backtrace-----
+E, [2025-04-14T15:47:50.420653 #16068] ERROR -- default-macchinapazza: ---Nested Exception---
+E, [2025-04-14T15:47:50.420673 #16068] ERROR -- default-macchinapazza: Class: Kitchen::Transport::SshFailed
+E, [2025-04-14T15:47:50.420695 #16068] ERROR -- default-macchinapazza: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2025-04-14T15:47:50.420718 #16068] ERROR -- default-macchinapazza: ----------------------
+E, [2025-04-14T15:47:50.420739 #16068] ERROR -- default-macchinapazza: ------Backtrace-------
+E, [2025-04-14T15:47:50.420762 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2025-04-14T15:47:50.420786 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2025-04-14T15:47:50.420809 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2025-04-14T15:47:50.420843 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2025-04-14T15:47:50.420859 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2025-04-14T15:47:50.420873 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2025-04-14T15:47:50.420887 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:523:in `action'
+E, [2025-04-14T15:47:50.420901 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2025-04-14T15:47:50.420922 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2025-04-14T15:47:50.420947 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2025-04-14T15:47:50.420970 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2025-04-14T15:47:50.420991 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `each'
+E, [2025-04-14T15:47:50.421015 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2025-04-14T15:47:50.421033 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2025-04-14T15:47:50.421063 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2025-04-14T15:47:50.421076 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2025-04-14T15:47:50.421088 #16068] ERROR -- default-macchinapazza: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.6.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2025-04-14T15:47:50.421101 #16068] ERROR -- default-macchinapazza: ----End Backtrace-----

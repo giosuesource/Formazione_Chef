@@ -1,5 +1,5 @@
 {
-  "revision_id": "1c281a558d0b50e51ad4ff8e89a4ae9ba99aecbacd85d9d5910248959b495d6e",
+  "revision_id": "ecc9c3d0bfb7f7e92fe7e7c200595feb207ab89ce4229f6f004ac0c925abb814",
   "name": "primo_esercizio",
   "run_list": [
     "recipe[primo_esercizio::default]"
@@ -8,16 +8,27 @@
 
   ],
   "cookbook_locks": {
+    "docker": {
+      "version": "11.9.2",
+      "identifier": "51acf14ec97149f6909eaabb4afca05aeb9f298d",
+      "dotted_decimal_identifier": "22989625522483529.69401855414455036.176312360577421",
+      "cache_key": "docker-11.9.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/docker/versions/11.9.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/docker/versions/11.9.2/download",
+        "version": "11.9.2"
+      }
+    },
     "primo_esercizio": {
       "version": "0.1.0",
-      "identifier": "72374b865f42e464bdf0fd30fb1fd43915abaa8a",
-      "dotted_decimal_identifier": "32148944861479652.28356340408711967.233341641796234",
+      "identifier": "abaccce3b0705dcf273e156b8f5152703d09e021",
+      "dotted_decimal_identifier": "48322217010819165.58308467779931985.90642013872161",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "https://github.com/giosuesource/sou-lab-cni",
-        "revision": "6347051a1708bde184cdf73e88c508853021c655",
+        "remote": "git@github.com:giosuesource/Formazione_Chef.git",
+        "revision": "bb3044d65ac1e179d15bef0350740af3da803dfd",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -38,13 +49,23 @@
   "solution_dependencies": {
     "Policyfile": [
       [
+        "docker",
+        "= 11.9.2"
+      ],
+      [
         "primo_esercizio",
         ">= 0.0.0"
       ]
     ],
     "dependencies": {
-      "primo_esercizio (0.1.0)": [
+      "docker (11.9.2)": [
 
+      ],
+      "primo_esercizio (0.1.0)": [
+        [
+          "docker",
+          ">= 0.0.0"
+        ]
       ]
     }
   }
