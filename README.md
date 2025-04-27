@@ -46,4 +46,5 @@ Si andrà poi ad eseguire il comando "chef install" e successivamente "chef uplo
 Per completare l' esercizio si andrà sulla macchina Client, la quale con il comando "chef-client" si connetterà al Server ed eseguirà il cookbook scritto.
 
 ### Extra:
-è stato creato un file contenente la History delle 3 VM
+- è stato creato un file contenente la History delle 3 VM
+- sono stati effettuati dei test del cookbook precedentemente alla creazione delle 3 VM utilizzando Test Kitchen. Pertanto è stato creato un file kitchen.yml che è stato modificato affinché si creassero delle VM "di test", le quali sono state create utilizzando il comando "kitchen converge" e alle quali ci siamo connessi con il comando "kitchen login"
