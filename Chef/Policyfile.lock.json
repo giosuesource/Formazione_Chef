@@ -1,5 +1,5 @@
 {
-  "revision_id": "ecc9c3d0bfb7f7e92fe7e7c200595feb207ab89ce4229f6f004ac0c925abb814",
+  "revision_id": "04702efc2a0b5bdfe8f0907f4a6b0c911c06a2bbda14cd2d96cdbd239694fb94",
   "name": "primo_esercizio",
   "run_list": [
     "recipe[primo_esercizio::default]"
@@ -8,27 +8,38 @@
 
   ],
   "cookbook_locks": {
-    "docker": {
-      "version": "11.9.2",
-      "identifier": "51acf14ec97149f6909eaabb4afca05aeb9f298d",
-      "dotted_decimal_identifier": "22989625522483529.69401855414455036.176312360577421",
-      "cache_key": "docker-11.9.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/docker/versions/11.9.2/download",
+    "apt": {
+      "version": "7.6.0",
+      "identifier": "279e645471c7071b35c8893a42778f103244141d",
+      "dotted_decimal_identifier": "11151677842376455.7658959783215735.157299725571101",
+      "cache_key": "apt-7.6.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.6.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/docker/versions/11.9.2/download",
-        "version": "11.9.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.6.0/download",
+        "version": "7.6.0"
+      }
+    },
+    "docker": {
+      "version": "7.7.8",
+      "identifier": "146cefc21df1cd4f3dca6478166bf7cd958840ab",
+      "dotted_decimal_identifier": "5749276543939021.22304462638421611.272462349090987",
+      "cache_key": "docker-7.7.8-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/docker/versions/7.7.8/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/docker/versions/7.7.8/download",
+        "version": "7.7.8"
       }
     },
     "primo_esercizio": {
       "version": "0.1.0",
-      "identifier": "abaccce3b0705dcf273e156b8f5152703d09e021",
-      "dotted_decimal_identifier": "48322217010819165.58308467779931985.90642013872161",
+      "identifier": "5e93e6aa6949442231f90108283381c9e1ad4071",
+      "dotted_decimal_identifier": "26621266721589572.9625094742091827.142704074637425",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:giosuesource/Formazione_Chef.git",
-        "revision": "bb3044d65ac1e179d15bef0350740af3da803dfd",
+        "revision": "81b4d2853883fe525117c896793444815b22bd6b",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -49,8 +60,12 @@
   "solution_dependencies": {
     "Policyfile": [
       [
+        "apt",
+        "= 7.6.0"
+      ],
+      [
         "docker",
-        "= 11.9.2"
+        "= 7.7.8"
       ],
       [
         "primo_esercizio",
@@ -58,13 +73,20 @@
       ]
     ],
     "dependencies": {
-      "docker (11.9.2)": [
+      "apt (7.6.0)": [
+
+      ],
+      "docker (7.7.8)": [
 
       ],
       "primo_esercizio (0.1.0)": [
         [
+          "apt",
+          ">= 7.4.0"
+        ],
+        [
           "docker",
-          ">= 0.0.0"
+          "~> 7.7.0"
         ]
       ]
     }

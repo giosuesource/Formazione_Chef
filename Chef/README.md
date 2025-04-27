@@ -1,4 +1,2 @@
 # primo_esercizio
-
-TODO: Enter the cookbook description here.
-
+primo_cookbook che sfrutta Docker
