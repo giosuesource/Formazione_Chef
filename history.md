@@ -33,7 +33,24 @@ knife client list
 cd trusted_certs/chserver.crt                                                                             
 cat trusted_certs/chserver.crt                                                                            
 vi /etc/hosts                                                                                             
-vi config.rb                                                                                              
+vi config.rb
+cd                                                                                      
+cd /etc/                                                                                
+mkdir chef                                                                              
+cd chef/                                                                                
+knife client create primonodo -u myorg-validator -k /etc/chef/myorg-validator.pem -d "client per primonodo" -f /etc/chef client.pem
+cd                                                                                      
+mkdir -p ~/chef-repo/cookbooks                                                          
+cd ~/chef-repo/cookbooks                                                                                                                    
+chef generate cookbook primo_cookbook                                                   
+cd 
+vim recipes/default.rb                                                                  
+vi recipes/default.rb                                                                   
+vi metadata.rb                                                                
+vi Policyfile.rb
+knife node run_list add primonodo 'recipe[primo_cookbook::default]'
+chef install
+knife cookbook upload primo_cookbook                                                                                      
 
 CLIENT
 dnf update && dnf upgrade                                                                                                           
@@ -65,4 +82,4 @@ cd /etc/chef/
 ls                                                                                                                                  
 pwd                                                                                                                                 
 chef-client -j /etc/chef/client.rb --validation-client-name myorg-validator --validation-key /etc/chef/myorg-validator.pem          
-chef-client
+chef-client   
