@@ -1,7 +1,0 @@
-DEPENDENCIES
-  apt
-  docker (~> 7.7)
-
-GRAPH
-  apt (7.6.0)
-  docker (7.7.8)

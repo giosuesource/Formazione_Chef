@@ -1,12 +1,10 @@
-# Aggiornamento della lista dei pacchetti
-
-execute 'apt-get update' do
-  command 'apt-get update'
-  action :run
-end
-
+#
+# Cookbook:: primo_cookbook
+# Recipe:: default
+#
+# Copyright:: 2025, The Authors, All Rights Reserved.
 docker_service 'default' do
-  install_method 'script'
+  install_method 'package'
   action [:create, :start]
 end
 
@@ -16,9 +14,6 @@ end
 
 docker_container 'eugeniocontainer' do
   repo 'jenkins/jenkins'
-#  port '1234:1234'
-#  command "nc -ll -p 1234 -e /bin/cat"
   volumes ['/var/run/docker.sock:/var/run/docker.sock']
   user 'root'
 end
-
