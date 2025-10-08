@@ -1,5 +1,5 @@
 
-# Formazione Chef: primo esercizio svolto utilizzando Chef Automation Tool
+## Formazione Chef: primo esercizio svolto utilizzando Chef Automation Tool
 
 ### Descrizione esercizio:
 
